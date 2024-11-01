@@ -1,0 +1,10 @@
+---
+// Logout function
+function handleLogout() {
+  localStorage.removeItem('pb_token');
+  alert("You have been logged out.");
+}
+---
+
+<!-- Logout Button -->
+<button on:click={handleLogout}>Logout</button>
